@@ -50,5 +50,11 @@ def reduce_to_total(array, starting_point = 0)
 end
 
 # if all true, return true
-def 
+def reduce_to_all_true(source_array)
+  array.each do |i|
+    if i == !true 
+      result = false 
+    end  
+  result
+end
 
