@@ -59,3 +59,12 @@ def reduce_to_all_true(source_array)
   return true
 end
 
+# if ANY true, return true
+def reduce_to_any_true(source_array)
+  source_array.each do |index|
+    if index
+      return true
+    end
+  end
+  return false
+end
