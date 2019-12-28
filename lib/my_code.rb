@@ -51,10 +51,11 @@ end
 
 # if all true, return true
 def reduce_to_all_true(source_array)
-  array.each do |i|
-    if i == !true 
-      result = false 
-    end  
-  result
+  source_array.each do |index|
+    if !index
+      return false
+    end
+  end
+  return true
 end
 
